@@ -1,0 +1,79 @@
+# RM-SCHOOL - Combined .gitignore for Angular Web and Spring Boot API
+
+# ====================
+# Angular Web (rm-school-web)
+# ====================
+
+# Compiled output
+rm-school-web/dist
+rm-school-web/tmp
+rm-school-web/out-tsc
+rm-school-web/bazel-out
+
+# Node
+rm-school-web/node_modules
+rm-school-web/npm-debug.log
+rm-school-web/yarn-error.log
+
+# Angular specific
+rm-school-web/.angular/cache
+rm-school-web/.sass-cache/
+rm-school-web/connect.lock
+rm-school-web/coverage
+rm-school-web/libpeerconnection.log
+rm-school-web/testem.log
+rm-school-web/typings
+rm-school-web/__screenshots__/
+
+# ====================
+# Spring Boot API (rm-school-api)
+# ====================
+
+HELP.md
+rm-school-api/target/
+rm-school-api/.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven
+rm-school-api/.apt_generated
+rm-school-api/.factorypath
+rm-school-api/.springBeans
+rm-school-api/.sts4-cache
+
+# Gradle
+rm-school-api/nbproject/private/
+rm-school-api/nbbuild/
+rm-school-api/dist/
+rm-school-api/nbdist/
+rm-school-api/.nb-gradle/
+rm-school-api/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ====================
+# IDEs and Editors (Global)
+# ====================
+
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.iws
+*.iml
+*.ipr
+
+# Visual Studio Code
+.vscode/
+.history/*
+
+# ====================
+# System Files
+# ====================
+
+.DS_Store
+Thumbs.db
+.env
